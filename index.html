@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pretty board</title>
+        <link href="./styles/style.css" type="text/css" rel="stylesheet">
+        <link href="./styles/media-styles.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width", initiial-scale="1.0"></head>
+
+    <body>
+     <div class="header">
+           <form>
+               <input class="taskinput">
+               <input type="datetime-local" class="taskinput">        
+           </form>
+           <div type="button" class="create-button">Create task</div>
+     </div>
+
+     <div class="content">
+        <div>
+            <div class="tasks-column">
+                    <div class="status">
+                        <p>TO-DO: </p><span class="quantity">3</span>
+                    </div>
+                    <div class=tasks>
+                        <ul class="task-list">
+                            <li>HomeTask8 <div class="list-buttons">
+                                <div class="move"></div><div class="remove"></div></div>
+                            </li>
+                            <li>HomeTask9</li>
+                            <li>HomeTask10</li>
+                        </ul>
+                    </div>
+                    
+            </div>
+            <button class="clear-button">Clear All</button>
+        </div>
+
+<div>
+            <div class="tasks-column">
+                <div class="status">
+                    <p>IN PROGRESS: </p><span class="quantity">1</span>
+                </div>
+                <div class=tasks>
+                    <ul class="task-list">
+                        <li>HomeTask7</li>
+                    </ul>
+                </div>
+            </div>
+            <button class="clear-button">Clear All</button>
+        </div>
+
+        <div>
+        <div class="tasks-column">
+            <div class="status">
+                <p>DONE: </p><span class="quantity">2</span>
+            </div>
+            <div class=tasks>
+                <ul class="task-list">
+                    <li>HomeTask6</li>
+                    <li>HomeTask5</li>
+                </ul>
+            </div>
+        </div>
+        <button class="clear-button">Clear All</button>
+    </div>
+    </div>
+    </body>
+</html>
