@@ -1,9 +1,12 @@
-let quantities=document.querySelectorAll('.task-list');
+let tasklist=document.querySelectorAll('.task-list');
+let quantity=document.querySelectorAll('.quantity');
 
-function getTasks(tasklist){
+
+for(let i=0;i<tasklist.length;i++){
+    setQuantity(tasklist[i],quantity[i]);
+}
+function setQuantity(tasklist,quantity){
     let counter=tasklist.getElementsByTagName('li').length;
     let text=document.createTextNode(counter);
-    return text;
+    quantity.append(text);   
 }
-
-console.log(getTasks(quantities[0]));
