@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+	display: flex;
+    flex-direction: column;
+    background:url("/board_project/images/2.jpg")
+}
+.header{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height: 30vh;
+    width: 100vw;
+    background-color:#B46499;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vh;
+    justify-content: space-around;
+}
+.tasks-column{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 25vw;
+    background-color:#FFFFFF;
+}
+.status{
+    display: flex;
+    height: 8vh;
+    background-color:#51AFB7;
+}
+.status p, span{
+    color:#FFFFFF;
+    font-family: 'Heebo', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    padding-left: 1vw;
+    margin: 1vh 0;
+
+}
+.clear-button{
+    width: 25vw;
+    height: 6vh;
+    background-color:#F9AF94;
+    border: none;
+    color:#FFFFFF;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+.task{
+    display: flex;
+    flex-direction: row;
+}
+
+.task-list{
+    list-style-type:none;
+    color:#51AFB7;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+}
+.task-list>li{
+    padding:15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.task-list>li:nth-child(odd){
+    background-color:#F2F2F2;
+}
+
+.create-button{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 15vw;
+    height:35px;
+    background-color:#F9AF94;
+    border: none;
+    color:#FFFFFF;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0;
+    margin: 0 10px;
+}
+
+.taskinput{
+    width: 20vw;
+    height:35px;
+    padding: 0;
+    margin: 0 10px;
+    border:none;
+}
+.list-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 25px;
+    width:60px;
+}
+.move{
+    display: flex;
+    width:25px;
+    background-image: url("/board_project/images/arrow_right-512.png");
+    background-size: cover;
+
+}
+.remove{
+    display: flex;
+    width:25px;
+    background-image: url("/board_project/images/delete.png");
+    background-size: cover;
+}

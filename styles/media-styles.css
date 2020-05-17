@@ -1,0 +1,12 @@
+@media all and (max-width: 900px) {
+    .clear-button, .create-button{
+        overflow: scroll;
+    }
+    .tasks-column{
+        overflow: scroll;
+    }
+}
+
+@media all and (max-width: 550px) {
+
+}
