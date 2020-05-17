@@ -2,7 +2,7 @@ body{
     margin: 0;
 	display: flex;
     flex-direction: column;
-    background:url("/board_project/images/2.jpg")
+    background:url("/images/2.jpg")
 }
 .header{
     display: flex;
@@ -106,13 +106,13 @@ body{
 .move{
     display: flex;
     width:25px;
-    background-image: url("/board_project/images/arrow_right-512.png");
+    background-image: url("/images/arrow_right-512.png");
     background-size: cover;
 
 }
 .remove{
     display: flex;
     width:25px;
-    background-image: url("/board_project/images/delete.png");
+    background-image: url("/images/delete.png");
     background-size: cover;
 }
