@@ -16,7 +16,7 @@ function setQuantity(tasklist,quantity){
 }
 
 function addTask(){
-    createElement(userForm.elements.taskname.value);
+    createTask(userForm.elements.taskname.value);
 }
 
 function createTask(userData){
