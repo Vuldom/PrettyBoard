@@ -19,12 +19,19 @@ let inprogressClear=clearButton[1];
 let doneClear=clearButton[2];
 
 createButton.addEventListener('click',addNewTask);
+todoClear.addEventListener('click',deleteTodo);
 inprogressClear.addEventListener('click',deleteAll);
 doneClear.addEventListener('click',deleteAll);
 
+function deleteTodo(){
+   Tasks.todo.splice(0, Tasks.todo.length);
+   localStorage.setItem('tasks',JSON.stringify(Tasks));
+   clearTasklist(tasklist[0]);
+   buildTaskList(storedObj.todo,tasklist[0]);
+}
+
 function setQuantity(tasklist){
     let counter=tasklist.getElementsByTagName('li').length;
-    console.log(counter);
     let text=document.createTextNode(counter);
     let quantity=document.querySelectorAll('.quantity');
 }
@@ -58,7 +65,6 @@ function buildTaskList(tasks, tasklist){
 
 function addListButtons(){
     let lists=document.querySelectorAll('li');
-    console.log(lists);
     for(let li of lists){
         let divWithButtons=document.createElement('div');
         divWithButtons.classList.add('list-buttons');
