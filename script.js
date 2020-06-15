@@ -20,8 +20,8 @@ let doneClear=clearButton[2];
 
 createButton.addEventListener('click',addNewTask);
 todoClear.addEventListener('click',deleteTodo);
-inprogressClear.addEventListener('click',deleteAll);
-doneClear.addEventListener('click',deleteAll);
+inprogressClear.addEventListener('click',deleteInprogress);
+doneClear.addEventListener('click',deleteDone);
 
 function deleteTodo(){
    Tasks.todo.splice(0, Tasks.todo.length);
@@ -29,6 +29,18 @@ function deleteTodo(){
    clearTasklist(tasklist[0]);
    buildTaskList(storedObj.todo,tasklist[0]);
 }
+function deleteInprogress(){
+    Tasks.inprogress.splice(0, Tasks.inprogress.length);
+    localStorage.setItem('tasks',JSON.stringify(Tasks));
+    clearTasklist(tasklist[1]);
+    buildTaskList(storedObj.inprogress,tasklist[1]);
+ }
+ function deleteDone(){
+    Tasks.done.splice(0, Tasks.done.length);
+    localStorage.setItem('tasks',JSON.stringify(Tasks));
+    clearTasklist(tasklist[2]);
+    buildTaskList(storedObj.done,tasklist[2]);
+ }
 
 function setQuantity(tasklist){
     let counter=tasklist.getElementsByTagName('li').length;
